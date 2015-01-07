@@ -12,6 +12,7 @@ If you're new to littleBits, you'll want to:
 - [Specifically check out the littleBits cloudBit module page](http://littlebits.cc/bits/cloudbit)
 - [Read the documentation on the littleBits Cloud HTTP API](http://developer.littlebitscloud.cc/api-http)
 - [Install the NuGet package](https://www.nuget.org/packages/LittleBits.CloudBitApiClient)
+- [Watch this demonstration video (<2 mins) on how to use the client library](https://www.youtube.com/watch?v=6zFUcO79ErI&feature=youtu.be)
 
 ## Using the Client Library ##
 
