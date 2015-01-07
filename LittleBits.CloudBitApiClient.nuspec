@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata>
         <id>LittleBits.CloudBitApiClient</id>
@@ -6,6 +6,7 @@
         <title>littleBits cloudBit API Client Library</title>
         <authors>bradyg</authors>
         <owners>bradyg</owners>
+        <projectUrl>https://github.com/bradygaster/littleBits.CloudBitClient</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Provides the ability to trigger the change in module output, create and delete subscriptions, and retrieve the list of active cloudBit modules and their individual status. 
 
@@ -14,14 +15,6 @@ For more information about the littleBits cloudBit, see http://littlebits.cc/bit
 For more information about the cloudBit API, see http://developer.littlebitscloud.cc.</description>
         <language>es-US</language>
         <tags>iot littleBits cloudBit api</tags>
-        <references>
-            <group targetFramework="portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10">
-                <reference file="LittleBits.CloudBitApiClient.dll" />
-            </group>
-            <group targetFramework="net45">
-                <reference file="LittleBits.CloudBitApiClient.dll" />
-            </group>
-        </references>
         <dependencies>
             <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.2" />
             <dependency id="Microsoft.Bcl" version="1.1.9" />
@@ -29,9 +22,17 @@ For more information about the cloudBit API, see http://developer.littlebitsclou
             <dependency id="Microsoft.Net.Http" version="2.2.22" />
             <dependency id="Newtonsoft.Json" version="6.0.7" />
         </dependencies>
+        <references>
+            <group targetFramework=".NETPortable0.0-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10">
+                <reference file="LittleBits.CloudBitApiClient.dll" />
+            </group>
+            <group targetFramework=".NETFramework4.5">
+                <reference file="LittleBits.CloudBitApiClient.dll" />
+            </group>
+        </references>
     </metadata>
     <files>
-        <file src="LittleBits.CloudBitApiClient.Net453\bin\Debug\LittleBits.CloudBitApiClient.dll" target="lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10"/>
-        <file src="LittleBits.CloudBitApiClient.Pcl\bin\Debug\LittleBits.CloudBitApiClient.dll" target="lib\net45"/>
+        <file src="LittleBits.CloudBitApiClient.Pcl\bin\Debug\LittleBits.CloudBitApiClient.dll" target="lib\net45\LittleBits.CloudBitApiClient.dll" />
+        <file src="LittleBits.CloudBitApiClient.Net453\bin\Debug\LittleBits.CloudBitApiClient.dll" target="lib\portable-net45+win+wpa81+wp80+MonoAndroid10+MonoTouch10\LittleBits.CloudBitApiClient.dll" />
     </files>
 </package>
